@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: "Lexend Giga", serif;
+    font-optical-sizing: auto;
+    color: $c-text;
+    // background: url(./assets/bg-space.jpg) center/cover;
+    height: 100vh;
+}

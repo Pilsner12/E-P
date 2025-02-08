@@ -1,0 +1,104 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap");
+
+.navbar {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-menu {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: block;
+
+    @include desktop {
+        display: none;
+      }
+
+    .mobile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+
+      .logo {
+        color: white;
+        font-size: 1.25rem;
+      }
+
+      .menu-toggle {
+        color: white;
+        font-size: 2rem;
+        // background: none;
+        // border: none;
+        cursor: pointer;
+      }
+    }
+    .menu-list {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        backdrop-filter: blur(10px);
+  
+        li {
+          margin-bottom: 0.5rem;
+  
+          a {
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #5a2c91;
+            }
+          }
+        }
+      }
+    }
+
+    .desktop-menu {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        width: 66%;
+
+        @include desktop {
+            display: flex;
+          }
+    
+        .logo {
+          color: white;
+          font-size: 1.25rem;
+          margin-right: 2rem;
+        }
+    
+        .menu-list {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+    
+          li {
+            a {
+              font-size: 1.2rem;
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s;
+    
+              &:hover {
+                color: #5a2c91;
+              }
+            }
+          }
+        }
+      }
