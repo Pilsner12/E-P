@@ -7,7 +7,7 @@ import astronautImage from "./assets/astronaut.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="container">
         <img src={astronautImage} alt="Astronaut" className="astronaut" />
         {/* Text */}

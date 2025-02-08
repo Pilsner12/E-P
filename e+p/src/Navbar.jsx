@@ -44,24 +44,30 @@ const Navbar = () => {
             <ul className="menu-list">
               <li>
                 <a href="#home" onClick={(e) => handleLinkClick(e, "#home")}>
-                  Home planet
+                  Úvod
                 </a>
               </li>
               <li>
                 <a href="#bio" onClick={(e) => handleLinkClick(e, "#bio")}>
-                  BIO
+                  Bio
                 </a>
               </li>
               <li>
                 <a href="#skills" onClick={(e) => handleLinkClick(e, "#skills")}>
-                  Skills
+                Dovednosti
                 </a>
               </li>
               <li>
+              <a href="#education"  onClick={(e) => handleLinkClick(e, "#education")}>
+                Vzdělání
+              </a>
+            </li>
+              <li>
                 <a href="#projects" onClick={(e) => handleLinkClick(e, "#projects")}>
-                  Space Trips
+                 Planetární Exkurze
                 </a>
               </li>
+              
             </ul>
           )}
         </div>
@@ -72,22 +78,27 @@ const Navbar = () => {
           <ul className="menu-list">
             <li>
               <a href="#home"  onClick={(e) => handleLinkClick(e, "#home")}>
-                Home planet
+            Úvod
               </a>
             </li>
             <li>
               <a href="#bio"  onClick={(e) => handleLinkClick(e, "#bio")}>
-                BIO
+                Bio
               </a>
             </li>
             <li>
               <a href="#skills"  onClick={(e) => handleLinkClick(e, "#skills")}>
-                Skills
+                Dovednosti
               </a>
             </li>
             <li>
-              <a href="#projects"  onClick={(e) => handleLinkClick(e, "#projects")}>
-                Space Trips
+              <a href="#education"  onClick={(e) => handleLinkClick(e, "#education")}>
+                Vzdělání
+              </a>
+            </li>
+            <li>
+              <a href="#SpaceExcursion"  onClick={(e) => handleLinkClick(e, "#SpaceExcursion")}>
+                Planetární Exkurze
               </a>
             </li>
             <li>
