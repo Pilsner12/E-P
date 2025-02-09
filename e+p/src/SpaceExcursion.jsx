@@ -11,7 +11,7 @@ const SpaceExcursion = () => {
       <h1>Planetární Exkurze</h1>
       <div className="card-container">
         <div className="card">
-          <h2 className="card-title">Planeta React 🌍 - To-Do List  </h2>
+          <h2 className="card-title">Planeta React 🌍✨ - To-Do List  </h2>
           <a href=""> <img
             src={toDoList}
             alt="img"
@@ -22,7 +22,7 @@ const SpaceExcursion = () => {
           </p>
         </div>
         <div className="card">
-          <h2 className="card-title">Planeta JavaScript 🌑 - Stopwatch  </h2>
+          <h2 className="card-title">Planeta JavaScript 🌑✨ - Stopwatch  </h2>
           <a href=""><img
             src={stopWatch}
             alt="img"
@@ -50,7 +50,7 @@ const SpaceExcursion = () => {
             alt="img"
           /></a>
           <p>
-          Tato planeta je domovem mé <strong>Recipe App</strong>, která vám pomůže najít nové recepty, ukládat je a organizovat podle ingrediencí nebo typu jídla. 
+          Tato planeta je domovem mé <strong>Recipe App</strong> 🌱, která vám pomůže najít nové recepty, ukládat je a organizovat podle ingrediencí nebo typu jídla. 
           Ponořte se do světa chutí a experimentujte s novými pokrmy!
           </p>
         </div>

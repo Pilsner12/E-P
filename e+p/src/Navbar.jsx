@@ -63,7 +63,7 @@ const Navbar = () => {
               </a>
             </li>
               <li>
-                <a href="#projects" onClick={(e) => handleLinkClick(e, "#projects")}>
+                <a href="#SpaceExcursion" onClick={(e) => handleLinkClick(e, "#SpaceExcursion")}>
                  Planetární Exkurze
                 </a>
               </li>
