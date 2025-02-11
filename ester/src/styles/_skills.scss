@@ -1,0 +1,89 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap");
+
+
+
+.skills {
+    max-width: 100%;
+    margin-inline: auto;
+
+    .container-skills {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+        max-width: $tablet-size;
+        }
+
+        @include desktop {
+        max-width: $desktop-size;
+        }
+    }
+    
+    .title {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 5rem; 
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: bold;    
+    }   
+    
+    .skills-box {
+     margin-inline: 0.5rem;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-between; 
+     gap: 2rem; 
+     border-radius: 1.5rem;
+     padding-inline: 1rem;
+     padding-block: 0.5rem;
+     border: 1px solid rgba(241, 245, 249, 0.3);
+     
+        @include desktop {
+        padding-inline: 5rem;
+      }
+    }    
+    .icon-box {
+        display: flex;
+        align-items: center; /* Ikona a text budou vertikálně centrovány */
+        gap: 1rem; /* Mezera mezi ikonou a textem */
+        border-bottom: 1px solid rgba(241, 245, 249, 0.3);
+        
+        &:last-of-type {
+            border-bottom: none;
+        }
+        h3 {
+            padding-inline: 1.5rem;
+            font-size: 1.125rem;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .icon-box img, .icon-box svg {
+        width: 40px; /* Uprav velikost pro ikony */
+        height: 40px; /* Uprav velikost pro ikony */
+    }
+
+    .icon-box h3 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .api-icon {
+        filter: brightness(0) invert(1);
+    }
+
+    
+   
+}
+
+
