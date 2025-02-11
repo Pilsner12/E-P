@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; // zajistí responzivitu
+  flex-wrap: wrap; 
 
   @include tablet {
     display: grid;
@@ -97,3 +97,7 @@
   }
 }
 
+.back-home {
+  font-size: 1.4rem;
+  font-weight: 700;
+}

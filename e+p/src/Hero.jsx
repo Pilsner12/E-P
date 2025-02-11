@@ -2,6 +2,8 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import "./styles/main.scss";
+import { Link } from "react-router-dom";
+
 
 import astronautImage from "./assets/astronaut.png";
 
@@ -47,6 +49,7 @@ const Hero = () => {
             příjemný let! 🚀
           </motion.p>
         </div>
+        <Link to="/" className="back-home">Zpět na planetu Země ➤ </Link>
       </div>
     </section>
   );
