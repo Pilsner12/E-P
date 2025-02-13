@@ -1,0 +1,2 @@
+// # Komponenta pro domovskou stránku. //
+

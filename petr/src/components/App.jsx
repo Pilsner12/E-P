@@ -1,0 +1,1 @@
+// hlavní komponenta aplikace //
