@@ -5,20 +5,17 @@
 .education {
     padding-block: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 
     .title-education {
-        margin: 0 auto;
+        margin-inline: auto;
+        margin-top: 5rem;
         margin-bottom: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.875rem;
         text-align: center;
         font-weight: bold;
-
-        @include tablet {
-        font-size: 1.5rem; 
-        }
 
         @include desktop {
         font-size: 1.875rem;
@@ -87,3 +84,4 @@
         }
     }
 }
+

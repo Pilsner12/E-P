@@ -6,7 +6,6 @@ import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
 import MainNavbar from "./MainNavbar";
 
-
 function App() {
   return (
     <>
@@ -16,7 +15,7 @@ function App() {
       >
         <div className="container_app">
           {/* <img src={etneteraIcon} alt="etnetera-logo" className="w-48 h-auto" /> */}
-          <MainNavbar/>
+          <MainNavbar />
           <div className="header__introduction">
             <h1 className="text-3xl md:text-4xl lg:text-6xl text-center">
               Děkujeme za příležitost!
@@ -45,17 +44,19 @@ function App() {
               <img
                 src={esterImg}
                 alt="ester-img"
-                className="main__image w-[200px] h-[200px] rounded-full sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] cursor-pointer"
+                className="main__image w-[200px] h-[200px] rounded-full sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] cursor-pointer
+                            transition-transform duration-300 ease-in-out hover:scale-110"
               />
-            {/* </Link> */}
-            <p className="main__text text-2xl md:text-4xl lg:text-5xl">
-              Ester Andrews
-            </p>
+              {/* </Link> */}
+              <p className="main__text text-2xl md:text-4xl lg:text-5xl transition-transform duration-300 ease-in-out hover:scale-110">
+                Ester Andrews
+              </p>
             </Link>
           </div>
           <div className="flex flex-col items-center">
-            <span className="main__image w-[200px] h-[200px] rounded-full bg-amber-50 block sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] cursor-pointer"></span>
-            <p className="main__text text-2xl md:text-4xl lg:text-5xl">
+            <span className="main__image w-[200px] h-[200px] rounded-full bg-amber-50 block sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] cursor-pointer
+                              transition-transform duration-300 ease-in-out hover:scale-110"></span>
+            <p className="main__text text-2xl md:text-4xl lg:text-5xl transition-transform duration-300 ease-in-out hover:scale-110">
               Petr Smolka
             </p>
           </div>

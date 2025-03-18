@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; // zajistí responzivitu
 
   @include tablet {
     display: grid;
@@ -73,7 +73,7 @@
 
 // Astronaut image animation
 .astronaut {
-  width: 300px; 
+  width: 300px;
   animation: float 5s infinite ease-in-out;
 
   @include tablet {
@@ -97,7 +97,16 @@
   }
 }
 
-.back-home {
-  font-size: 1.4rem;
-  font-weight: 700;
+.back-button {
+  font-size: 1rem;
+
+  @include tablet {
+    font-size: 1.2rem;
+  }
+  @include desktop {
+    font-size: 1.4rem;
+  }
+  &:hover {
+    color: #A5C8FF;
+  }
 }

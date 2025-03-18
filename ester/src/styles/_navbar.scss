@@ -2,6 +2,10 @@
 @use "./variables" as *;
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   position: fixed;
   top: 1rem;
@@ -10,7 +14,25 @@
   z-index: 50;
   display: flex;
   justify-content: center;
+  align-items: center;
   backdrop-filter: blur(10px);
+}
+
+.switchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.switchButton:hover {
+  transform: scale(1.2);
+}
+
+.flag-icon {
+  width: 30px;
+  height: auto;
+  display: inline-block;
 }
 
 .mobile-menu {
@@ -30,7 +52,22 @@
 
     .logo {
       color: white;
-      font-size: 1.25rem;
+      font-size: 1rem;
+
+      &:before {
+        content: "🚀"; 
+        font-size: 1rem;
+        margin-right: 1rem;
+      }  
+
+      @include tablet {
+        font-size: 1.1rem;
+      }
+
+      @include desktop {
+        font-size: 1.2rem;
+      }
+      
     }
 
     .menu-toggle {
@@ -80,8 +117,17 @@
     color: white;
     font-size: 1.25rem;
     margin-right: 2rem;
-  }
 
+    ::before {
+      content: "🚀"; 
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 990px) and (max-width: 1460px) {
+      font-size: 0;
+    }
+  }
+}
   .menu-list {
     display: flex;
     align-items: center;
@@ -100,4 +146,10 @@
       }
     }
   }
-}
+
+  @media (min-width: 990px) and (max-width: 1460px) {
+    .logo::before {
+      content: "🚀"; 
+      font-size: 1.5rem; 
+    }
+  }
