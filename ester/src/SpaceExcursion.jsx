@@ -121,8 +121,4 @@ const SpaceExcursion = ({ language }) => {
   );
 };
 
-<<<<<<< HEAD
 export default SpaceExcursion;
-=======
-export default SpaceExcursion;
->>>>>>> main

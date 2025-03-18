@@ -115,14 +115,6 @@ const Navbar = ({ language, setLanguage }) => {
                 {texts[language].planets}
               </a>
             </li>
-            <li>
-              <a
-                href="#contact"
-                onClick={(e) => handleLinkClick(e, "#contact")}
-              >
-                {texts[language].contact}
-              </a>
-            </li>
           </ul>
         )}
       </div>
@@ -160,11 +152,6 @@ const Navbar = ({ language, setLanguage }) => {
               onClick={(e) => handleLinkClick(e, "#SpaceExcursion")}
             >
               {texts[language].planets}
-            </a>
-          </li>
-          <li>
-            <a href="#contact" onClick={(e) => handleLinkClick(e, "#contact")}>
-              {texts[language].contact}
             </a>
           </li>
           <li>

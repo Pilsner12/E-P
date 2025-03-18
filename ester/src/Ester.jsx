@@ -6,7 +6,6 @@ import Skills from "./Skills";
 import Education from "./Education";
 import SpaceExcursion from "./SpaceExcursion";
 import Footer from "./Footer";
-import EsterContactForm from "./EsterContactForm";
 
 export function Ester() {
   const [language, setLanguage] = useState("cz");
@@ -20,7 +19,6 @@ export function Ester() {
         <Skills language={language} />
         <Education language={language} />
         <SpaceExcursion language={language} />
-        <EsterContactForm language={language} />
         <Footer language={language} />
       </div>
     </>
