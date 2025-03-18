@@ -5,6 +5,7 @@ import "./styles/main.scss";
 import ContactForm from "./ContactForm";
 import { Link } from "react-router-dom";
 import MainNavbar from "./MainNavbar";
+import petrImg from "./assets/petrImg.jpeg";
 
 function App() {
   return (
@@ -54,11 +55,18 @@ function App() {
             </Link>
           </div>
           <div className="flex flex-col items-center">
-            <span className="main__image w-[200px] h-[200px] rounded-full bg-amber-50 block sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] cursor-pointer
-                              transition-transform duration-300 ease-in-out hover:scale-110"></span>
+          <Link to="/PetrProfile">
+            <img src={petrImg}
+            alt="petr-img" 
+            className="main__image w-[200px] h-[200px] rounded-full sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] cursor-pointer
+                            transition-transform duration-300 ease-in-out hover:scale-110"
+            />
+          </Link>
+          <Link to="/PetrProfile">
             <p className="main__text text-2xl md:text-4xl lg:text-5xl transition-transform duration-300 ease-in-out hover:scale-110">
               Petr Smolka
             </p>
+            </Link>  
           </div>
         </div>
       </main>

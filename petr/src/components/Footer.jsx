@@ -1,1 +1,0 @@
-// # Komponenta pro patičku aplikace. //

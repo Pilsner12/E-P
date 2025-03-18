@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import EsterProfile from './Ester.jsx'
+import PetrProfile from './Petr.jsx'
 
 import {
   BrowserRouter,
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/EsterProfile' element={<EsterProfile />} /> 
+        <Route path='/PetrProfile' element={<PetrProfile />} /> 
       </Routes>
     </BrowserRouter>
     
