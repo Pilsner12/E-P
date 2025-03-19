@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles/main.scss";
 import cvImg from "./assets/cvImg.jpeg"
-import dkDentImg from "./assets/dkdentImg.jpeg"
+import dkDentImg from "./assets/dkDentImg.jpeg"
 
 const Petr = () => {
   return (
