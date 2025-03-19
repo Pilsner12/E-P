@@ -60,6 +60,11 @@ const MainNavbar = () => {
                   Kontakt
                   </a>
                 </li>
+                <li id="nav_link">
+                  <a href="https://github.com/Pilsner12/E-P/tree/main" target="_blank">
+                  Zdrojový kód
+                  </a>
+                </li>
               </ul>
             )}
           </div>
@@ -83,6 +88,11 @@ const MainNavbar = () => {
                 Kontakt
                 </a>
               </li>
+              <li id="nav_link">
+                  <a href="https://github.com/Pilsner12/E-P/tree/main" target="_blank">
+                  Zdrojový kód
+                  </a>
+                </li>
             </ul>
           </div>
         </nav>
